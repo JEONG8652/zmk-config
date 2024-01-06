@@ -9,6 +9,13 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
+if SHIELD_JJH_CUSTOM_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "JJH Custom 48 R"
+
+endif
+
 if SHIELD_JJH_CUSTOM_LEFT || SHIELD_JJH_CUSTOM_RIGHT
 
 config ZMK_SPLIT
