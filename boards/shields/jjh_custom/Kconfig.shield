@@ -1,0 +1,8 @@
+# Copyright (c) 2020 Pete Johanson
+# SPDX-License-Identifier: MIT
+
+config SHIELD_JJH_CUSTOM_LEFT
+    def_bool $(shields_list_contains,jjh_custom_left)
+
+config SHIELD_JJH_CUSTOM_RIGHT
+    def_bool $(shields_list_contains,jjh_custom_right)
