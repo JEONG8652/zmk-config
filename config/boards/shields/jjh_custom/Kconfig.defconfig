@@ -7,9 +7,6 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-config CONFIG_ZMK_BATTERY_REPORTING
-    default y
-
 endif
 
 if SHIELD_JJH_CUSTOM_RIGHT
@@ -22,12 +19,6 @@ endif
 if SHIELD_JJH_CUSTOM_LEFT || SHIELD_JJH_CUSTOM_RIGHT
 
 config ZMK_SPLIT
-    default y
-
-config CONFIG_BT
-    default y
-
-config CONFIG_ZMK_BLE
     default y
 
 endif
