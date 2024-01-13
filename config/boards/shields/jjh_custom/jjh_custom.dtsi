@@ -4,6 +4,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
+        zmk,battery = &vbatt;
     };
 
     default_transform: keymap_transform_0 {
@@ -41,5 +42,9 @@
             , <&pro_micro 15 GPIO_ACTIVE_HIGH>
             , <&pro_micro 14 GPIO_ACTIVE_HIGH>
             ;
+    };
+
+    vbatt: vbatt {
+        compatible = "zmk,battery-nrf-vddh";
     };
 };
